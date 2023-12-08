@@ -1,0 +1,185 @@
+body{
+padding: 0;
+margin: 0;
+}
+.nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:#fff;
+    padding: 1% 0%;
+    text-align: right;
+    z-index: 1000;
+}
+
+.nav-bar a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 7px;
+    font-size: 130%;
+}
+header {
+    background-color: #fff;
+    color: #000000;
+    text-align: center;
+    padding: 2% 1%;
+    font-size: 200%;
+    font-weight: 800;
+    position: relative;
+    overflow: hidden;
+    
+
+}
+
+.sobre_mi{
+    padding: 3% 5%;
+    color: #fff;
+    font-size: 170%;
+    font-weight: 800;
+  background-color:#000000 ;
+}
+.proyectos{
+    position: relative;
+    color: #fff;
+    font-size: 170%;
+    font-weight: 800;
+    padding: 3% 5%;
+    background-color:#000000
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff0000;
+    background-color: #fff;
+}
+h2{
+    color: #ff0000;
+}
+.btn{
+    background-color: #ff0000;
+    padding: 1% 2%;
+    border-radius: 30%;
+}
+.contacto {
+    background-color: #fff;
+    color: #000000;
+    text-align: center;
+    padding: 3% ;
+    font-size: 150%;
+    font-weight: 800;
+}
+.contacto a{
+    color: #000000;
+}
+.contacto a:hover{
+    color: #ff0000;
+}
+.btn-float {
+    font-size: 150%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #fff;
+    padding: 1% 2%;
+    border-radius: 5px;
+    text-decoration: none;
+    display: none;
+    animation: floatAnimation 2s ease-in-out infinite; /* Agrega la animación de flotación */
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Ajusta la altura del "flotamiento" */
+    }
+}
+
+.btn-float:hover{
+    background-color: #ff0000;
+    color:#fff ;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 70%; /* Ajustar según sea necesario */
+   
+}
+
+.carousel {
+    display: flex;
+ 
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    border-radius: 5%;
+    width: 100%; /* O ajustar según sea necesario */
+    height: auto;
+    object-fit: cover; /* Ajustar para que la imagen cubra el espacio */
+}
+
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    .nav-bar {
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    .nav-bar a {
+        display: inline-block; /* Cambiado de block a inline-block */
+        margin: 0 10px; /* Ajusta el margen según sea necesario */
+    }
+
+    header {
+        padding: 5% 1%;
+    }
+
+    /* Estilos específicos para móviles */
+    header {
+        padding: 5% 1%;
+    }
+
+    .sobre_mi,
+    .proyectos,
+    .contacto {
+        padding: 12%;
+    }
+
+    .carousel-container {
+        margin-bottom: 15px;
+    }
+
+    .carousel img {
+        border-radius: 5%;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 120%;
+    }
+
+    h2 {
+        font-size: 100%;
+    }
+
+    p {
+        font-size: 90%;
+    }
+    .fixed-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+}
