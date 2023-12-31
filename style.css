@@ -155,7 +155,12 @@ h2{
     height: auto;
     object-fit: cover; /* Ajustar para que la imagen cubra el espacio */
 }
-
+.insta{
+    color: #ff0000 !important;  
+}
+.insta:hover{
+    color: #000000 !important;
+}
 
 
 /* Estilos para dispositivos móviles */
