@@ -33,7 +33,7 @@ function showImage(index) {
 }
 
 // Configurar intervalo para cambiar automáticamente las imágenes cada 5 segundos
-setInterval(() => showImage(currentIndex + 1), 4000);
+setInterval(() => showImage(currentIndex + 1), 3000);
 // fin del carruzel
 function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);

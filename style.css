@@ -1,6 +1,7 @@
 body{
 padding: 0;
 margin: 0;
+
 }
 .nav-bar {
     position: fixed;
@@ -54,14 +55,37 @@ a:hover{
     color: #ff0000;
     background-color: #fff;
 }
+
 h2{
     color: #ff0000;
 }
-.btn{
-    background-color: #ff0000;
-    padding: 1% 2%;
-    border-radius: 30%;
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
 }
+
+.btn-ver-mas {
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    animation: float 5s ease infinite; /* Ajusta la duración de la animación a 5 segundos */
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-ver-mas:hover {
+    background-color: #fff;
+    transition-duration: 1s;
+}
+
+
+
+
 .contacto {
     background-color: #fff;
     color: #000000;
@@ -76,8 +100,9 @@ h2{
 .contacto a:hover{
     color: #ff0000;
 }
+
 .btn-float {
-    font-size: 150%;
+    font-size: 100%;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -88,6 +113,7 @@ h2{
     text-decoration: none;
     display: none;
     animation: floatAnimation 2s ease-in-out infinite; /* Agrega la animación de flotación */
+    transition-duration: 1s;
 }
 
 @keyframes floatAnimation {
@@ -95,29 +121,33 @@ h2{
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px); /* Ajusta la altura del "flotamiento" */
+        transform: translateY(-20px); /* Ajusta la altura del "flotamiento" */
     }
 }
 
 .btn-float:hover{
     background-color: #ff0000;
     color:#fff ;
+    scale: 1.3;
+    margin-right: 2%;
+    
+    
 }
 
 .carousel-container {
     overflow: hidden;
-    width: 70%; /* Ajustar según sea necesario */
+    width: 80%; /* Ajustar según sea necesario */
    
 }
 
 .carousel {
     display: flex;
  
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.8s ease-in-out;
 }
 
 .carousel img {
-    border-radius: 5%;
+    border-radius: 10%;
     width: 100%; /* O ajustar según sea necesario */
     height: auto;
     object-fit: cover; /* Ajustar para que la imagen cubra el espacio */
